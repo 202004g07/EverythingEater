@@ -1,4 +1,19 @@
 @startuml
+class CollisionDetector {
+    - OnCollisionEnter2D(collision:Collision2D) : void
+    - OnCollisionExit2D(collision:Collision2D) : void
+    - OnCollisionStay2D(collision:Collision2D) : void
+}
+class CollisionEvent {
+}
+class "UnityEvent`1"<T> {
+}
+MonoBehaviour <|-- CollisionDetector
+CollisionDetector o-> "onCollisonEnter2D" CollisionEvent
+CollisionDetector o-> "onCollisonStary2D" CollisionEvent
+CollisionDetector o-> "onCollisonExit2D" CollisionEvent
+CollisionDetector +-- CollisionEvent
+"UnityEvent`1" "<Collision2D>" <|-- CollisionEvent
 class EatableObjContoroller {
     - Ratio : float = 10
     - PlayerSize : float
@@ -12,15 +27,20 @@ IEatable <|-- EatableObjContoroller
 EatableObjContoroller --> "Player" SpriteRenderer
 EatableObjContoroller --> "Renderer" SpriteRenderer
 class EatController {
-    Start() : void
-    - OnTriggerEnter2D(collision:Collider2D) : void
+    - OnCollisionEnter2D(collision:Collision2D) : void
 }
 MonoBehaviour <|-- EatController
-EatController --> "PlayerSize" Vector3
 interface IEatable {
     IsEatable() : bool
     Eaten() : void
 }
+class PlayerCollisionController {
+    - Awake() : void
+    + OnDetectEatableObj(collider:Collision2D) : void
+    + OnEatableObjExit(collider:Collision2D) : void
+}
+MonoBehaviour <|-- PlayerCollisionController
+PlayerCollisionController --> "MouseCollision" BoxCollider2D
 class PlayerMover {
     - Speed : float = 1
     - h : float

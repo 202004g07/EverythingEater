@@ -1,8 +1,6 @@
 @startuml
 class EatController {
-    Start() : void
-    - OnTriggerEnter2D(collision:Collider2D) : void
+    - OnCollisionEnter2D(collision:Collision2D) : void
 }
 MonoBehaviour <|-- EatController
-EatController --> "PlayerSize" Vector3
 @enduml

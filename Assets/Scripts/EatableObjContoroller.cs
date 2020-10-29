@@ -8,6 +8,7 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
     private SpriteRenderer Player;
     [SerializeField]
     private float Ratio = 10;
+
     private float PlayerSize;
     private SpriteRenderer Renderer;
     private float ObjSize;
@@ -39,10 +40,8 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
         PlayerSize = Player.bounds.size.x * Player.bounds.size.y;
         if (PlayerSize >= ObjSize)
         {
-            Debug.Log("食べられるよ！");
             return true;
         }
-        Debug.Log("食べられないよ！");
         return false;
     }
 }

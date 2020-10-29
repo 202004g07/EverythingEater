@@ -1,0 +1,9 @@
+@startuml
+class PlayerCollisionController {
+    - Awake() : void
+    + OnDetectEatableObj(collider:Collision2D) : void
+    + OnEatableObjExit(collider:Collision2D) : void
+}
+MonoBehaviour <|-- PlayerCollisionController
+PlayerCollisionController --> "MouseCollision" BoxCollider2D
+@enduml

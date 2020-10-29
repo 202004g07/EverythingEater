@@ -1,0 +1,17 @@
+@startuml
+class CollisionDetector {
+    - OnCollisionEnter2D(collision:Collision2D) : void
+    - OnCollisionExit2D(collision:Collision2D) : void
+    - OnCollisionStay2D(collision:Collision2D) : void
+}
+class CollisionEvent {
+}
+class "UnityEvent`1"<T> {
+}
+MonoBehaviour <|-- CollisionDetector
+CollisionDetector o-> "onCollisonEnter2D" CollisionEvent
+CollisionDetector o-> "onCollisonStary2D" CollisionEvent
+CollisionDetector o-> "onCollisonExit2D" CollisionEvent
+CollisionDetector +-- CollisionEvent
+"UnityEvent`1" "<Collision2D>" <|-- CollisionEvent
+@enduml

@@ -29,6 +29,7 @@ public class PlayerMover : MonoBehaviour
 
         rd.velocity = inputVector * Speed;
         Vector2 diff = (Trans.position - playerPos).normalized;
+        Debug.Log(diff);
 
         if (diff.magnitude > 0.01f)
         {
@@ -36,4 +37,5 @@ public class PlayerMover : MonoBehaviour
         }
         playerPos = Trans.position;
     }
+
 }
