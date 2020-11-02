@@ -1,0 +1,9 @@
+@startuml
+class TimerEvent {
+    isInvoked : bool = false
+    Update() : void
+}
+MonoBehaviour <|-- TimerEvent
+TimerEvent o-> "OnTimeOver" UnityEvent
+TimerEvent --> "timer" Timer
+@enduml

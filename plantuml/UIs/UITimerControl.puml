@@ -1,0 +1,9 @@
+@startuml
+class UITimerControl {
+    - Start() : void
+    ClockTimer() : IEnumerator
+}
+MonoBehaviour <|-- UITimerControl
+UITimerControl --> "timer" Timer
+UITimerControl --> "timerSprite" Image
+@enduml

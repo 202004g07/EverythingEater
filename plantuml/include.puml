@@ -1,0 +1,15 @@
+@startuml
+!include .\\CollisionDetector.puml
+!include .\\Timer.puml
+!include .\\TimerEvent.puml
+!include .\\Eats\EatableObjContoroller.puml
+!include .\\Eats\EatableObjSO.puml
+!include .\\Eats\EatController.puml
+!include .\\Eats\IEatable.puml
+!include .\\Players\DivideController.puml
+!include .\\Players\PlayerCollisionController.puml
+!include .\\Players\PlayerMover.puml
+!include .\\UIs\UISizeManager.puml
+!include .\\UIs\UITimerControl.puml
+!include .\\UIs\UI_TimeManager.puml
+@enduml

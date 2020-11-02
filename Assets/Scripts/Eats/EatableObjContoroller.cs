@@ -14,6 +14,7 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
     private float PlayerSize;
     private Renderer m_Renderer;
     private float ObjSize => m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
+
     void Start()
     {
         m_Renderer = GetComponent<Renderer>();

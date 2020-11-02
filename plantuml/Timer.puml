@@ -1,0 +1,11 @@
+@startuml
+class Timer {
+    + StartTime : int
+    + Time : float <<get>>
+    + IsTimeOver : bool <<get>>
+    OnEnable() : void
+    + Update() : void
+    + Reset() : void
+}
+ScriptableObject <|-- Timer
+@enduml

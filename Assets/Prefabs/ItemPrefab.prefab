@@ -122,4 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SO: {fileID: 11400000, guid: b7c7379af97da0f4d83963d257d24259, type: 2}
+  Player: {fileID: 0}
   Ratio: 10

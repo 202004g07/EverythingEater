@@ -1,0 +1,8 @@
+@startuml
+class UI_TimeManager {
+    Update() : void
+}
+MonoBehaviour <|-- UI_TimeManager
+UI_TimeManager --> "Timer" Timer
+UI_TimeManager --> "Time" Text
+@enduml

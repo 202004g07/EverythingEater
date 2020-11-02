@@ -1,0 +1,13 @@
+@startuml
+class PlayerMover {
+    - Speed : float = 1
+    - h : float
+    - v : float
+    - Start() : void
+    Update() : void
+}
+MonoBehaviour <|-- PlayerMover
+PlayerMover --> "Trans" Transform
+PlayerMover --> "rd" Rigidbody2D
+PlayerMover --> "playerPos" Vector3
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+class UISizeManager {
+    - GoalSize : float = 30
+    - MaxSize : float = 462
+    - PlayerScale : float
+    - BaffaPlayerSize : float
+    - Ratio : float
+    - Awake() : void
+    - Update() : void
+    - GetAfterDecimalPoint(num:float) : float
+}
+MonoBehaviour <|-- UISizeManager
+UISizeManager --> "Player" Transform
+UISizeManager --> "PlayerUI" RectTransform
+UISizeManager --> "TargetUI" RectTransform
+UISizeManager --> "Size" Text
+UISizeManager --> "GoalSizeT" Text
+@enduml

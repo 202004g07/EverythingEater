@@ -1973,6 +1973,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14752fc1621029e43a4f38323c17b85a, type: 3}
+--- !u!1 &1164584775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
+    type: 3}
+  m_PrefabInstance: {fileID: 773891808620647009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1164584781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164584775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d67a7bea9133124bb615e0882ea0893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1188686324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 773891807342185908, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
@@ -2993,10 +3011,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 73941067, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
+      propertyPath: objSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c09c9174f074454ca99ac71b1c5be47,
+        type: 2}
+    - target: {fileID: 73941067, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
+      propertyPath: InjectionPower
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 73941067, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
+      propertyPath: PlayerPrefab
+      value: 
+      objectReference: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
+        type: 3}
     - target: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
+        type: 3}
+      propertyPath: m_TagString
+      value: M_Player
       objectReference: {fileID: 0}
     - target: {fileID: 773891807342185908, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
@@ -3062,6 +3099,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 532499296}
     m_Modifications:
+    - target: {fileID: 5475629190928038875, guid: 14752fc1621029e43a4f38323c17b85a,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1952210904}
     - target: {fileID: 5475629190928038878, guid: 14752fc1621029e43a4f38323c17b85a,
         type: 3}
       propertyPath: m_LocalPosition.x

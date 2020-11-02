@@ -1,0 +1,15 @@
+@startuml
+class EatableObjContoroller {
+    - Ratio : float = 10
+    - PlayerSize : float
+    - ObjSize : float <<get>>
+    Start() : void
+    + Eaten() : void
+    + IsEatable() : bool
+}
+MonoBehaviour <|-- EatableObjContoroller
+IEatable <|-- EatableObjContoroller
+EatableObjContoroller --> "m_SO" EatableObjSO
+EatableObjContoroller --> "Player" SpriteRenderer
+EatableObjContoroller --> "m_Renderer" Renderer
+@enduml

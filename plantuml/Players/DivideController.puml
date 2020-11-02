@@ -1,0 +1,12 @@
+@startuml
+class DivideController {
+    DividableSize : float = 1
+    InjectionPower : float = 10
+    Start() : void
+    Update() : void
+    + HalfAreaSide(size:float) : float
+    + Divide() : void
+}
+MonoBehaviour <|-- DivideController
+DivideController --> "m_Renderer" SpriteRenderer
+@enduml
