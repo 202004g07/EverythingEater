@@ -13,14 +13,12 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
 
     private float PlayerSize;
     private Renderer m_Renderer;
-    private float ObjSize;
+    private float ObjSize => m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
     void Start()
     {
         m_Renderer = GetComponent<Renderer>();
-
-        ObjSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
-        Debug.Log($"{gameObject.name}: {ObjSize}");
     }
+
     /// <summary>
     /// 食べられたときプレイヤーを大きくする処理を行う。
     /// </summary>
@@ -48,4 +46,14 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
         }
         return false;
     }
+    //TODO: 増殖したプレイヤーが相互捕食できるようにしたい
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    var hitObj = collision.gameObject.GetComponent<SpriteRenderer>();
+
+    //    if (/*!hitObj.CompareTag("Player") && */hitObj == null) return;
+
+    //    Player = hitObj;
+    //    PlayerSize = Player.bounds.size.x * Player.bounds.size.y;
+    //}
 }

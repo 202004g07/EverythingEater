@@ -195,26 +195,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24682200}
   m_CullTransparentMesh: 0
---- !u!1 &73941066 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
-    type: 3}
-  m_PrefabInstance: {fileID: 773891808620647009}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &73941067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73941066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abbdd4c6ec1e9c94bb44e34ebcab7f6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DividableSize: 1
-  InjectionPower: 3
 --- !u!1 &130281014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,14 +2993,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 65874307, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65874307, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 773891807342185906, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
       propertyPath: m_Name
@@ -3081,16 +3053,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 773891807342185908, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 773891807342185908, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
 --- !u!1001 &5475629190231689743
@@ -3100,16 +3062,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 532499296}
     m_Modifications:
-    - target: {fileID: 5475629190928038875, guid: 14752fc1621029e43a4f38323c17b85a,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1952210904}
-    - target: {fileID: 5475629190928038875, guid: 14752fc1621029e43a4f38323c17b85a,
-        type: 3}
-      propertyPath: PlayerT
-      value: 
-      objectReference: {fileID: 1003577161}
     - target: {fileID: 5475629190928038878, guid: 14752fc1621029e43a4f38323c17b85a,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -40,7 +40,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 65874305}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 4e8e9c69f2b56a24a810ee7d009c4e86, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -428,6 +428,7 @@ GameObject:
   - component: {fileID: 6818078864437970812}
   - component: {fileID: 773891807342185911}
   - component: {fileID: 7588068604604218376}
+  - component: {fileID: 73941067}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -563,3 +564,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706b3bf06f046b542896f7f1b8dea256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &73941067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773891807342185906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbdd4c6ec1e9c94bb44e34ebcab7f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DividableSize: 1
+  InjectionPower: 1

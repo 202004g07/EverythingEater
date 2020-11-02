@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerController : MonoBehaviour
+public class DivideController : MonoBehaviour
 {
     [SerializeField]
     float DividableSize = 1;
@@ -14,13 +14,10 @@ public class PlayerController : MonoBehaviour
     {
         m_Renderer = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Input Space");
             Divide();
         }
     }
@@ -31,23 +28,25 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     public float HalfAreaSide(float size)
     {
-        return Mathf.Sqrt(size);
+        return Mathf.Sqrt(size / 2);
     }
     /// <summary>
     /// 可能であれば分裂する
     /// </summary>
     public void Divide()
     {
-        Debug.Log("Try Divide");
         var nowSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
         if (nowSize < DividableSize) return;
-        Debug.Log("Do Divide");
+
         var halfSide = HalfAreaSide(nowSize);
 
-        var dividePos = new Vector2(transform.position.x, transform.position.y);
+        var dividePos = new Vector2(transform.position.x + halfSide, transform.position.y + halfSide);
         var player = Instantiate(gameObject, dividePos, Quaternion.identity);
 
+        gameObject.transform.localScale = new Vector3(halfSide, halfSide, 1);
         player.transform.localScale = new Vector3(halfSide, halfSide, 1);
+
         player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * InjectionPower);
     }
+
 }
