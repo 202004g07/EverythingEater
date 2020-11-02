@@ -19,8 +19,8 @@ public class UITimerControl : MonoBehaviour
         while (!timer.IsTimeOver)
         {
             var ratio = 1 - timer.Time / timer.StartTime;
-            Debug.Log(ratio);
             timerSprite.fillAmount = ratio;
+
             yield return new WaitForFixedUpdate();
         }
     }

@@ -17,7 +17,9 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
     void Start()
     {
         Renderer = GetComponent<SpriteRenderer>();
+
         ObjSize = Renderer.bounds.size.x * Renderer.bounds.size.y;
+        Debug.Log(ObjSize);
     }
     /// <summary>
     /// 食べられたときプレイヤーを大きくする処理を行う。

@@ -18,6 +18,8 @@ public class UISizeManager : MonoBehaviour
     //TODO ゲームマネージャーとかディレクター側で設定するように変更
     [SerializeField]
     private float GoalSize = 30;
+    [SerializeField]
+    private float MaxSize = 462;
 
     private float PlayerScale;
     private float BaffaPlayerSize;
@@ -35,7 +37,8 @@ public class UISizeManager : MonoBehaviour
         BaffaPlayerSize = PlayerScale;
 
         var diff = Player.localScale.x - BaffaPlayerSize;
-        PlayerUI.sizeDelta += new Vector2(Ratio * diff, Ratio * diff);
+
+        if (PlayerUI.sizeDelta.x < MaxSize) PlayerUI.sizeDelta += new Vector2(Ratio * diff, Ratio * diff);
 
         PlayerScale = Player.localScale.x;
 
