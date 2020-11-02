@@ -10,7 +10,7 @@ public class EatController : MonoBehaviour
 
         var eatObj = collision.gameObject.GetComponent<EatableObjContoroller>();
         if (eatObj == null) return;
-        Debug.Log("Eaten " + eatObj.name);
+
         eatObj.Eaten();
     }
 }

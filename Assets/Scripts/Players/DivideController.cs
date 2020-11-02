@@ -11,6 +11,7 @@ public class DivideController : MonoBehaviour
     //[SerializeField]
     //GameObject PlayerPrefab;
 
+    //TODO スケールでプレイヤーのサイズを扱うのかスケールで扱うのかをしっかり決める
     private SpriteRenderer m_Renderer;
     void Start()
     {
@@ -38,6 +39,8 @@ public class DivideController : MonoBehaviour
     public void Divide()
     {
         var nowSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
+        nowSize = transform.localScale.x * transform.localScale.y;
+        Debug.Log(nowSize);
         if (nowSize < DividableSize) return;
 
         var halfSide = HalfAreaSide(nowSize);
