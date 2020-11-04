@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
@@ -18,7 +19,6 @@ public class EatTest : MonoBehaviour
         m_Trans = transform;
         m_Sprite = GetComponent<SpriteRenderer>();
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var hitObjSprite = collision.gameObject.GetComponent<SpriteRenderer>();
@@ -31,5 +31,7 @@ public class EatTest : MonoBehaviour
         m_Trans.localScale = playerScale;
 
         Destroy(collision.gameObject);
+
+
     }
 }

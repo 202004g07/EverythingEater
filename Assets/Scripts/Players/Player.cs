@@ -26,4 +26,5 @@ public static class Player
     /// <param name="gameObject"></param>
     /// <returns></returns>
     public static bool IsMainPlayer(GameObject gameObject) => BiggestPlayer == gameObject;
+    public static int Count() => GameObject.FindGameObjectsWithTag("Player").Length;
 }
