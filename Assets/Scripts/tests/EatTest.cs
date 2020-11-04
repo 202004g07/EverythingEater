@@ -31,7 +31,5 @@ public class EatTest : MonoBehaviour
         m_Trans.localScale = playerScale;
 
         Destroy(collision.gameObject);
-
-
     }
 }

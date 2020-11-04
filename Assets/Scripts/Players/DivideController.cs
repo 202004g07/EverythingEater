@@ -8,8 +8,6 @@ public class DivideController : MonoBehaviour
     float DividableSize = 1;
     [SerializeField]
     float InjectionPower = 10;
-    //[SerializeField]
-    //GameObject PlayerPrefab;
 
     //TODO スケールでプレイヤーのサイズを扱うのかRendererのBoundsで扱うのかをしっかり決める
     // private SpriteRenderer m_Renderer;
