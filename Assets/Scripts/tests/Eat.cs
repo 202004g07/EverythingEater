@@ -6,7 +6,7 @@ using UnityEngine;
 /// 捕食者にアタッチするスクリプト
 /// </summary>
 [RequireComponent(typeof(Collider2D))]
-public class EatTest : MonoBehaviour
+public class Eat : MonoBehaviour
 {
     [SerializeField]
     float Ratio;
