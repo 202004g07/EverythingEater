@@ -53,7 +53,7 @@ public class DivideController : MonoBehaviour
 
         gameObject.transform.localScale = halfScale;
 
-        player.tag = "Player";
+        // player.tag = "Player";
         player.transform.localScale = halfScale;
         player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * InjectionPower);
     }

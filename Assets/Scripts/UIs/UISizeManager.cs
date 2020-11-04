@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UISizeManager : MonoBehaviour
 {
     // [SerializeField]
-    private Transform Player;
+    //private Transform Player;
     [SerializeField]
     private RectTransform PlayerUI;
     [SerializeField]
@@ -28,16 +28,14 @@ public class UISizeManager : MonoBehaviour
     private float Ratio;
     private void Awake()
     {
-        Player = BiggestPlayer;
-
-        PlayerScale = Player.localScale.x;
+        PlayerScale = BiggestPlayer.localScale.x;
         GoalSizeT.text = $"{GoalSize}㍍";
 
         Ratio = (TargetUI.rect.width - PlayerUI.rect.width) / (GoalSize - PlayerScale);
     }
     private void Update()
     {
-        BaffaPlayerSize = BiggestPlayer.localScale.x;
+        BaffaPlayerSize = PlayerScale;
 
         var diff = BiggestPlayer.localScale.x - BaffaPlayerSize;
 

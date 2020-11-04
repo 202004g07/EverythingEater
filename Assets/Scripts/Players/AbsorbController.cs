@@ -17,13 +17,12 @@ public class AbsorbController : MonoBehaviour
         {
             Absorb();
         }
-
     }
 
     void Absorb()
     {
         Players = GameObject.FindGameObjectsWithTag("Player").ToList(); ;
-        if (Players.Count == 0) return;
+        if (Players.Count <= 1) return;
 
         var addSize = 0f;
         foreach (var p in Players)
