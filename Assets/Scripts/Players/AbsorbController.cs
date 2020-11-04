@@ -21,10 +21,12 @@ public class AbsorbController : MonoBehaviour
 
     void Absorb()
     {
-        Players = GameObject.FindGameObjectsWithTag("Player").ToList(); ;
-        if (Players.Count <= 1) return;
+        Players = GameObject.FindGameObjectsWithTag("Player").ToList();
+        if (Players.Count <= 1 && !Player.IsMainPlayer(gameObject)) return;
 
         var addSize = 0f;
+        Players.Remove(gameObject);
+
         foreach (var p in Players)
         {
             addSize += p.transform.localScale.x * p.transform.localScale.y;

@@ -42,7 +42,7 @@ public class DivideController : MonoBehaviour
     {
         //var nowSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
         var nowSize = m_Trans.localScale.x * m_Trans.localScale.y;
-        Debug.Log(nowSize);
+
         if (nowSize < DividableSize) return;
 
         var halfSide = HalfAreaSide(nowSize);
