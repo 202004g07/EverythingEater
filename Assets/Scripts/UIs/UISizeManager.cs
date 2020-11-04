@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UISizeManager : MonoBehaviour
 {
-    [SerializeField]
+    // [SerializeField]
     private Transform Player;
     [SerializeField]
     private RectTransform PlayerUI;
@@ -27,6 +28,8 @@ public class UISizeManager : MonoBehaviour
     private float Ratio;
     private void Awake()
     {
+        Player = BiggestPlayer;
+
         PlayerScale = Player.localScale.x;
         GoalSizeT.text = $"{GoalSize}㍍";
 
@@ -34,13 +37,13 @@ public class UISizeManager : MonoBehaviour
     }
     private void Update()
     {
-        BaffaPlayerSize = PlayerScale;
+        BaffaPlayerSize = BiggestPlayer.localScale.x;
 
-        var diff = Player.localScale.x - BaffaPlayerSize;
+        var diff = BiggestPlayer.localScale.x - BaffaPlayerSize;
 
         if (PlayerUI.sizeDelta.x < MaxSize) PlayerUI.sizeDelta += new Vector2(Ratio * diff, Ratio * diff);
 
-        PlayerScale = Player.localScale.x;
+        PlayerScale = BiggestPlayer.localScale.x;
 
         var sizeAfterDecimal = GetAfterDecimalPoint(PlayerScale) * 10;
         Size.text = $"{Mathf.FloorToInt(PlayerScale)}㍍{sizeAfterDecimal:0}㌢";
@@ -54,5 +57,18 @@ public class UISizeManager : MonoBehaviour
     private float GetAfterDecimalPoint(float num)
     {
         return num % 1;
+    }
+    /// <summary>
+    /// シーン内に存在するPlayerの中で最も大きいプレイヤーのTrasfromを返す
+    /// </summary>
+    public Transform BiggestPlayer
+    {
+        get
+        {
+            var players = new List<GameObject>();
+            players = GameObject.FindGameObjectsWithTag("Player").ToList();
+
+            return players.OrderByDescending(p => p.transform.localScale.x).First().transform;
+        }
     }
 }
