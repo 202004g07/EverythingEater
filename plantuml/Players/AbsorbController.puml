@@ -1,0 +1,11 @@
+@startuml
+class AbsorbController {
+    - Awake() : void
+    Update() : void
+    Absorb() : void
+}
+class "List`1"<T> {
+}
+MonoBehaviour <|-- AbsorbController
+AbsorbController --> "Players<GameObject>" "List`1"
+@enduml

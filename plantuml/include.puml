@@ -6,6 +6,7 @@
 !include .\\Eats\EatableObjSO.puml
 !include .\\Eats\EatController.puml
 !include .\\Eats\IEatable.puml
+!include .\\Players\AbsorbController.puml
 !include .\\Players\DivideController.puml
 !include .\\Players\PlayerCollisionController.puml
 !include .\\Players\PlayerMover.puml
