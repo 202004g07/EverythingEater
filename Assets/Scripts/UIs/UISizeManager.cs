@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class UISizeManager : MonoBehaviour
 {
-    // [SerializeField]
-    //private Transform Player;
     [SerializeField]
     private RectTransform PlayerUI;
     [SerializeField]
@@ -16,18 +14,19 @@ public class UISizeManager : MonoBehaviour
     private Text Size;
     [SerializeField]
     private Text GoalSizeT;
-    //TODO ゲームマネージャーとかディレクター側で設定するように変更
-    [SerializeField]
-    private float GoalSize = 30;
     [SerializeField]
     private float MaxSize = 462;
+    [SerializeField]
+    GameDirector gameDirector;
 
+    private float GoalSize;
     private float PlayerScale;
     private float BaffaPlayerSize;
-
     private float Ratio;
     private void Awake()
     {
+        GoalSize = gameDirector.GoalSize;
+
         PlayerScale = Player.BiggestPlayer.localScale.x;
         GoalSizeT.text = $"{GoalSize}㍍";
 
