@@ -14,11 +14,12 @@ public class PlayerCollisionController : MonoBehaviour
     {
         var hitObj = collider.gameObject.GetComponent<IEatable>();
 
-        if (!hitObj.IsEatable() || hitObj == null)
-        {
-            Debug.Log("Cant Eat");
-            return;
-        }
+        //EatableObjeController変更に伴って
+        //if (!hitObj.IsEatable() || hitObj == null)
+        //{
+        //    Debug.Log("Cant Eat");
+        //    return;
+        //}
 
         MouseCollision.enabled = true;
     }

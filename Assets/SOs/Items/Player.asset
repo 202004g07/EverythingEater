@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57f50411137d134b874c491782250ca, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  Name: "\u308F\u305F\u3057"
+  Name: "\u30EF\u30BF\u30B7"
   m_Sprite: {fileID: 21300000, guid: fa8d6b1b5fad7fa448309d033de2fcd9, type: 3}

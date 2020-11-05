@@ -21,9 +21,14 @@ public class Eat : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var hitObjSprite = collision.gameObject.GetComponent<SpriteRenderer>();
-        var hitObjSize = hitObjSprite.bounds.size.x * hitObjSprite.bounds.size.y;
-        if (m_Size < hitObjSize) return;
+        TryEat(collision);
+    }
+    public void TryEat(Collision2D collision)
+    {
+        var hitObj = collision.gameObject.GetComponent<EatableObjContoroller>();
+        var hitObjSize = hitObj.ObjSize;
+
+        if (m_Size < hitObjSize || hitObj == null) return;
 
         var playerScale = m_Trans.localScale;
         playerScale += Vector3.one * (hitObjSize / Ratio);
