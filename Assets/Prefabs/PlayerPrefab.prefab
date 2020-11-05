@@ -582,6 +582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ratio: 10
+  ease: 7
+  Time: 0.5
 --- !u!114 &1164584777
 MonoBehaviour:
   m_ObjectHideFlags: 0
