@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,10 @@ public class Eat : MonoBehaviour
 {
     [SerializeField]
     float Ratio;
+    [SerializeField]
+    Ease ease;
+    [SerializeField]
+    float Time;
 
     private Transform m_Trans;
     private SpriteRenderer m_Sprite;
@@ -33,8 +38,11 @@ public class Eat : MonoBehaviour
         var playerScale = m_Trans.localScale;
         playerScale += Vector3.one * (hitObjSize / Ratio);
 
-        m_Trans.localScale = playerScale;
+        //m_Trans.localScale = playerScale;
+
+        m_Trans.DOScale(playerScale, Time).SetEase(ease);
 
         Destroy(collision.gameObject);
+
     }
 }

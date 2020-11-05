@@ -2311,7 +2311,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7a0d954548755014b86d79ea5df8d11b, type: 3}
+    m_Font: {fileID: 12800000, guid: 57be820074bf75844848fd2eedc04f5b, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -3316,7 +3316,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7a0d954548755014b86d79ea5df8d11b, type: 3}
+    m_Font: {fileID: 12800000, guid: 57be820074bf75844848fd2eedc04f5b, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -3936,6 +3936,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164584776, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
+      propertyPath: Time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164584776, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
+      propertyPath: ease
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1164584777, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
       propertyPath: vCam
       value: 
