@@ -43,8 +43,8 @@ public class UISizeManager : MonoBehaviour
 
         PlayerScale = Player.Biggest.localScale.x;
 
-        var sizeAfterDecimal = GetAfterDecimalPoint(PlayerScale) * 10;
-        Size.text = $"{Mathf.FloorToInt(PlayerScale)}㍍{sizeAfterDecimal:0}㌢";
+        var sizeAfterDecimal = GetAfterDecimalPoint(PlayerScale) * 100;
+        Size.text = $"{Mathf.FloorToInt(PlayerScale)}㍍{sizeAfterDecimal:00}㌢";
     }
     /// <summary>
     /// 小数点以下を返すメソッド

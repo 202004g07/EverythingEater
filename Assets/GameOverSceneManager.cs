@@ -13,7 +13,8 @@ public class GameOverSceneManager : MonoBehaviour
     void Start()
     {
         var integer = Mathf.Floor(Player.Size);
-        var AfterTheDecimalPoint = Player.Size - integer;
+        var AfterTheDecimalPoint = (Player.Size - integer) * 100;
         FinishSizeText.text = $"さいず:{integer}㍍ {AfterTheDecimalPoint:00}㌢";
+        Debug.Log(AfterTheDecimalPoint);
     }
 }

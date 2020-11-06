@@ -24,7 +24,11 @@ public class PlayerMover : MonoBehaviour
     }
     void Update()
     {
-        if (timer.IsTimeOver) return;
+        if (timer.IsTimeOver)
+        {
+            Trans.position = playerPos;
+            return;
+        }
 
         h = Input.GetAxis("Hori");
         v = Input.GetAxis("Ver");
