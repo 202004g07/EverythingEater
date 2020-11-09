@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 1164584777}
   - component: {fileID: 1164584781}
   - component: {fileID: 773891808620647011}
+  - component: {fileID: 367559055745335815}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -555,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.7
+  timer: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725, type: 2}
 --- !u!114 &73941067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,3 +625,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSO: {fileID: 11400000, guid: 6c09c9174f074454ca99ac71b1c5be47, type: 2}
   UIEaten: {fileID: 0}
+--- !u!114 &367559055745335815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773891807342185906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efbe86f5f83aca449887894a65abb95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSO: {fileID: 11400000, guid: 6c09c9174f074454ca99ac71b1c5be47, type: 2}

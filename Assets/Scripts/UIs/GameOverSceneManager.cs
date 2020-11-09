@@ -11,15 +11,15 @@ public class GameOverSceneManager : MonoBehaviour
     Text GoalSize;
     [SerializeField]
     EatableObjSO Player;
-    [SerializeField]
-    GameSetting gameSetting;
+    //[SerializeField]
+    //GameSetting gameSetting;
 
     void Start()
     {
         var integer = Mathf.Floor(Player.Size);
         var AfterTheDecimalPoint = (Player.Size - integer) * 100;
         FinishSizeText.text = $"あなたのさいず:{integer}㍍ {AfterTheDecimalPoint:00}㌢";
-        GoalSize.text = $"もくひょうのおおきさ：{gameSetting.GaolSize}㍍";
+        GoalSize.text = $"もくひょうのおおきさ：{GameDirector.Instance.GoalSize}㍍";
         Debug.Log(AfterTheDecimalPoint);
     }
 }

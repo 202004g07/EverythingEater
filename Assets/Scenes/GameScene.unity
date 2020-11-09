@@ -303,6 +303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725, type: 2}
   Time: {fileID: 716664692}
+  FinishUI: {fileID: 1347824680}
+  time: 1.8
+  ease: 27
 --- !u!114 &130281016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +320,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725, type: 2}
   timerSprite: {fileID: 174883490}
-  gameSetting: {fileID: 11400000, guid: e0b4d8a1d255e99488a7a2f2fb28b35b, type: 2}
 --- !u!114 &130281017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,6 +2416,7 @@ GameObject:
   - component: {fileID: 971191929}
   - component: {fileID: 971191931}
   - component: {fileID: 971191930}
+  - component: {fileID: 971191932}
   m_Layer: 5
   m_Name: tabeta
   m_TagString: Untagged
@@ -2481,6 +2484,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971191928}
   m_CullTransparentMesh: 0
+--- !u!114 &971191932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971191928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0.972549}
+  m_EffectDistance: {x: 5.5, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!4 &989156142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5475629190928038878, guid: 14752fc1621029e43a4f38323c17b85a,
@@ -2898,7 +2916,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTimeOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1193012075}
+      objectReference: {fileID: 130281015}
     - target: {fileID: 7683365911325817123, guid: 091cdafb0eb9a4741a218cbccc55a512,
         type: 3}
       propertyPath: OnTimeOver.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2967,18 +2985,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 091cdafb0eb9a4741a218cbccc55a512, type: 3}
---- !u!114 &1193012075 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5671449828272066679, guid: f74802e87d5110a418fe4d3d1e768def,
-    type: 3}
-  m_PrefabInstance: {fileID: 5671449827079142172}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9439de2a41cb67048955a2a31317ebb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1206282768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +3686,7 @@ GameObject:
   - component: {fileID: 1468598911}
   - component: {fileID: 1468598913}
   - component: {fileID: 1468598912}
+  - component: {fileID: 1468598914}
   m_Layer: 5
   m_Name: TabetaText
   m_TagString: Untagged
@@ -3747,6 +3754,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468598910}
   m_CullTransparentMesh: 0
+--- !u!114 &1468598914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468598910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5.5, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1535927258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4351,14 +4373,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1164584776, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
-      propertyPath: Time
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164584776, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
-      propertyPath: ease
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1164584777, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
       propertyPath: vCam
       value: 
@@ -4423,23 +4437,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 773891807342185911, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
-        type: 3}
-      propertyPath: timer
-      value: 
-      objectReference: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725,
-        type: 2}
     - target: {fileID: 773891808620647011, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
       propertyPath: UIEaten
       value: 
       objectReference: {fileID: 130281019}
-    - target: {fileID: 773891808620647011, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
-        type: 3}
-      propertyPath: objSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 6c09c9174f074454ca99ac71b1c5be47,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
 --- !u!1001 &5475629190231689743
