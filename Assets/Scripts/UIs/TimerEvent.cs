@@ -12,9 +12,10 @@ public class TimerEvent : MonoBehaviour
     private UnityEvent OnTimeOver = new UnityEvent();
     [SerializeField]
     private Timer timer;
+    [SerializeField]
+    private GameSetting gameSetting;
 
     bool isInvoked = false;
-
     void Update()
     {
         timer.Update();

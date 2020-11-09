@@ -10,6 +10,7 @@ public class UITimerControl : MonoBehaviour
     [SerializeField]
     Image timerSprite;
 
+
     private void Start()
     {
         StartCoroutine(ClockTimer());

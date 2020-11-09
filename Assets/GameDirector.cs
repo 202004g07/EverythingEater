@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameDirector : MonoBehaviour
 {
     [SerializeField]
+    GameSetting gameSetting;
+    [SerializeField]
     Timer timer;
     [SerializeField]
     EatableObjSO PlayerSO;
@@ -17,12 +19,46 @@ public class GameDirector : MonoBehaviour
     float time;
     [SerializeField]
     Ease ease;
-    public float GoalSize;
+    public float GoalSize => gameSetting.GaolSize;
 
+    #region Singleton
 
+    private static GameDirector instance;
+
+    public static GameDirector Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = (GameDirector)FindObjectOfType(typeof(GameDirector));
+
+                if (instance == null)
+                {
+                    Debug.LogError(typeof(GameDirector) + "is nothing");
+                }
+            }
+
+            return instance;
+        }
+    }
+
+    #endregion Singleton
+
+    //public void Awake()
+    //{
+    //    if (this != Instance)
+    //    {
+    //        Destroy(this.gameObject);
+    //        return;
+    //    }
+
+    //    DontDestroyOnLoad(this.gameObject);
+    //}
     private void Start()
     {
         FinishUI.SetActive(false);
+        //GoalSize = gameSetting.GaolSize;
     }
     private void Update()
     {

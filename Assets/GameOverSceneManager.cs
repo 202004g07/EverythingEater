@@ -8,13 +8,18 @@ public class GameOverSceneManager : MonoBehaviour
     [SerializeField]
     Text FinishSizeText;
     [SerializeField]
+    Text GoalSize;
+    [SerializeField]
     EatableObjSO Player;
+    [SerializeField]
+    GameSetting gameSetting;
 
     void Start()
     {
         var integer = Mathf.Floor(Player.Size);
         var AfterTheDecimalPoint = (Player.Size - integer) * 100;
-        FinishSizeText.text = $"さいず:{integer}㍍ {AfterTheDecimalPoint:00}㌢";
+        FinishSizeText.text = $"あなたのさいず:{integer}㍍ {AfterTheDecimalPoint:00}㌢";
+        GoalSize.text = $"もくひょうのおおきさ：{gameSetting.GaolSize}㍍";
         Debug.Log(AfterTheDecimalPoint);
     }
 }

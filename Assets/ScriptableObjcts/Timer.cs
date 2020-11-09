@@ -3,8 +3,9 @@
 [CreateAssetMenu]
 public class Timer : ScriptableObject
 {
+    public int StartTime { get; private set; }
     [SerializeField]
-    public int StartTime;
+    GameSetting gameSetting;
     public float Time { get; private set; }
     /// <summary>
     /// Timeが0以下かの判定を行う
@@ -36,6 +37,7 @@ public class Timer : ScriptableObject
     /// </summary>
     public void Reset()
     {
+        StartTime = gameSetting.Time;
         Time = StartTime;
     }
 }
