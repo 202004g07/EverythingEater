@@ -6,5 +6,4 @@ MonoBehaviour <|-- EatableObjContoroller
 IEatable <|-- EatableObjContoroller
 EatableObjContoroller --> "objSO" EatableObjSO
 EatableObjContoroller --> "UIEaten" UIEatenView
-note left of EatableObjContoroller : "食べられるもの"にアタッチする
 @enduml

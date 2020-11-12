@@ -1,27 +1,183 @@
 @startuml
-!include .\\GameDirector.puml
-!include .\\Eats\Eat.puml
-!include .\\Eats\EatableChar.puml
-!include .\\Eats\EatableObjContoroller.puml
-!include .\\Eats\IEatable.puml
-!include .\\Players\AbsorbController.puml
-!include .\\Players\DivideController.puml
-!include .\\Players\Player.puml
-!include .\\Players\PlayerController.puml
-!include .\\Players\PlayerMover.puml
-!include .\\ScriptableObjcts\EatableObjSO.puml
-!include .\\ScriptableObjcts\GameSetting.puml
-!include .\\ScriptableObjcts\Timer.puml
-!include .\\UIs\Buttons.puml
-!include .\\UIs\GameOverSceneManager.puml
-!include .\\UIs\GameOverSceneUnload.puml
-!include .\\UIs\PlayerCameraController.puml
-!include .\\UIs\testSize.puml
-!include .\\UIs\TimerEvent.puml
-!include .\\UIs\TitleSceneManager.puml
-!include .\\UIs\UIEatenView.puml
-!include .\\UIs\UISizeManager.puml
-!include .\\UIs\UITimerControl.puml
-!include .\\UIs\UI_TimeManager.puml
-!include .\\UIs\VCamFollow.puml
+class GameDirector {
+    + GoalSize : float <<get>>
+    + Awake() : void
+    + DestroySelf() : void
+}
+MonoBehaviour <|-- GameDirector
+GameDirector --> "gameSetting" GameSetting
+GameDirector --> "timer" Timer
+GameDirector --> "Instance" GameDirector
+class Eat {
+    Ratio : float
+    Time : float
+    Start() : void
+    + TryEat(collision:Collision2D) : void
+}
+MonoBehaviour <|-- Eat
+Eat --> "ease" Ease
+class EatableChar {
+    + <<override>> ObjSize : float <<get>>
+}
+EatableObjContoroller <|-- EatableChar
+EatableChar --> "m_Collider" BoxCollider2D
+class EatableObjContoroller {
+    + <<virtual>> ObjSize : float <<get>>
+}
+MonoBehaviour <|-- EatableObjContoroller
+IEatable <|-- EatableObjContoroller
+EatableObjContoroller --> "objSO" EatableObjSO
+EatableObjContoroller --> "UIEaten" UIEatenView
+interface IEatable {
+    ObjSize : float <<get>>
+}
+class AbsorbController {
+    Update() : void
+    Absorb() : void
+}
+MonoBehaviour <|-- AbsorbController
+class DivideController {
+    DividableSize : float = 1
+    InjectionPower : float = 10
+    Start() : void
+    Update() : void
+    + HalfAreaSide(size:float) : float
+    + Divide() : void
+}
+MonoBehaviour <|-- DivideController
+class Player <<static>> {
+    + {static} IsMainPlayer(gameObject:GameObject) : bool
+    + {static} Count() : int
+    + {static} BiggestSize : float <<get>>
+}
+Player --> "Biggest" Transform
+class PlayerController {
+    DistancePlayerScale : float
+    Distance : float
+    Update() : void
+    + AwayCamera() : void
+}
+MonoBehaviour <|-- PlayerController
+PlayerController --> "PlayerSO" EatableObjSO
+PlayerController --> "targetGroup" CinemachineTargetGroup
+class PlayerMover {
+    Update() : void
+}
+MonoBehaviour <|-- PlayerMover
+PlayerMover --> "timer" Timer
+class EatableObjSO {
+    + Name : string
+    + InitSize : float
+    + isPlayer : bool = false
+    + Size : float <<get>> <<set>>
+    + Init() : void
+}
+ScriptableObject <|-- EatableObjSO
+EatableObjSO --> "m_Sprite" Sprite
+class GameSetting {
+    Name : string
+    + GaolSize : float
+    + Time : int
+}
+ScriptableObject <|-- GameSetting
+class Timer {
+    + StartTime : int <<get>>
+    + Time : float <<get>>
+    + IsTimeOver : bool <<get>>
+    OnEnable() : void
+    + Update() : void
+    + Reset() : void
+}
+ScriptableObject <|-- Timer
+Timer --> "gameSetting" GameSetting
+class Buttons {
+    + OnRetry() : void
+    + OnQuit() : void
+}
+MonoBehaviour <|-- Buttons
+Buttons --> "timer" Timer
+class GameOverSceneManager {
+    Start() : void
+}
+MonoBehaviour <|-- GameOverSceneManager
+GameOverSceneManager --> "FinishSizeText" Text
+GameOverSceneManager --> "GoalSize" Text
+GameOverSceneManager --> "Player" EatableObjSO
+class GameOverSceneUnload {
+}
+MonoBehaviour <|-- GameOverSceneUnload
+class PlayerCameraController {
+}
+MonoBehaviour <|-- PlayerCameraController
+PlayerCameraController --> "vCam" VCamFollow
+class testSize {
+    Start() : void
+}
+MonoBehaviour <|-- testSize
+testSize --> "Player" EatableObjSO
+class TimerEvent {
+    isInvoked : bool = false
+    Update() : void
+}
+MonoBehaviour <|-- TimerEvent
+class TitleSceneManager {
+    FadeTime : float = 1
+    CharEatWaitTime : float = 0.5f
+    MoveDistance : float = 0.58f
+    Increment : float = 0.1f
+    Update() : void
+    CharEat() : IEnumerator
+    MoveEater() : IEnumerator
+}
+MonoBehaviour <|-- TitleSceneManager
+TitleSceneManager --> "StartText" Text
+TitleSceneManager --> "EatPlayer" Transform
+class UIEatenView {
+    + View(objSO:EatableObjSO) : void
+}
+MonoBehaviour <|-- UIEatenView
+UIEatenView --> "image" Image
+UIEatenView --> "Name" Text
+UIEatenView --> "DefaultColor" Color
+class UISizeManager {
+}
+MonoBehaviour <|-- UISizeManager
+class UITimerControl {
+    ClockTimer() : IEnumerator
+}
+MonoBehaviour <|-- UITimerControl
+UITimerControl --> "timer" Timer
+UITimerControl --> "timerSprite" Image
+class UI_TimeManager {
+    time : float
+    Update() : void
+    + OnGameOver() : void
+}
+MonoBehaviour <|-- UI_TimeManager
+UI_TimeManager --> "FinishUI" GameObject
+UI_TimeManager --> "ease" Ease
+class VCamFollow {
+    Radius : float = 4
+    + AddCinemaChineGroup(target:Transform) : void
+    + RemoveCinemaChineGroup(target:Transform) : void
+}
+MonoBehaviour <|-- VCamFollow
+VCamFollow --> "TargetGroup" CinemachineTargetGroup
+class CollisionDetector {
+}
+class CollisionEvent {
+}
+class "UnityEvent`1"<T> {
+}
+MonoBehaviour <|-- CollisionDetector
+CollisionDetector +-- CollisionEvent
+"UnityEvent`1" "<Collision2D>" <|-- CollisionEvent
+class EatController {
+}
+MonoBehaviour <|-- EatController
+class PlayerCollisionController {
+    + OnDetectEatableObj(collider:Collision2D) : void
+    + OnEatableObjExit(collider:Collision2D) : void
+}
+MonoBehaviour <|-- PlayerCollisionController
 @enduml

@@ -1149,6 +1149,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u3072\u3060\u308A\u3057\u3075\u3068"
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1269,6 +1280,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -2837,6 +2854,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1297874400831420655, guid: 128764ec12e7c4e4684fc515ae68cfa0,
         type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8577,6 +8599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontStyle
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -14405,6 +14432,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1297874400831420655, guid: 128764ec12e7c4e4684fc515ae68cfa0,
         type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17879,6 +17911,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u3059\u307A\u30FC\u3059"
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17999,6 +18042,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -18506,6 +18555,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u3044\u3069\u3046\uFF1A"
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18616,6 +18676,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -20444,6 +20510,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1297874400831420655, guid: 128764ec12e7c4e4684fc515ae68cfa0,
         type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20737,6 +20808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "\u3059\u3066\u30FC\u3058\uFF11"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -22054,6 +22130,11 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: 7.2543325
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22112,12 +22193,12 @@ PrefabInstance:
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -51.1
+      value: -42.9
       objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 46.4
+      value: 46.8
       objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -25767,6 +25848,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u304C\u3063\u305F\u3044\uFF1A"
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25887,6 +25979,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -26684,6 +26782,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u3076\u3093\u308C\u3064\uFF1A"
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26804,6 +26913,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -30758,6 +30873,17 @@ PrefabInstance:
       propertyPath: m_text
       value: WASD
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30868,6 +30994,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten
@@ -34448,6 +34580,17 @@ PrefabInstance:
       propertyPath: UIEaten
       value: 
       objectReference: {fileID: 130281019}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
+    - target: {fileID: 5310443818698440433, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310443818698440434, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34558,6 +34701,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText
       objectReference: {fileID: 0}
+    - target: {fileID: 5310443818698440439, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4560750582279339708, guid: 5b13f34cb5f8ff146957f4a64e4b9e44,
+        type: 2}
     - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: UIEaten

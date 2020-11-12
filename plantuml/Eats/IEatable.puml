@@ -2,5 +2,4 @@
 interface IEatable {
     ObjSize : float <<get>>
 }
-note left of IEatable : ”食べられるもの”に実装する
 @enduml

@@ -230,7 +230,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u305D\u3046\u3055"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: faeeef3f6b46ad54c8bb2d9f2ddedff5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5b13f34cb5f8ff146957f4a64e4b9e44, type: 2}
   m_sharedMaterial: {fileID: -9061648392590282851, guid: faeeef3f6b46ad54c8bb2d9f2ddedff5,
     type: 2}
   m_fontSharedMaterials: []
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 5310443818698440439}
   m_maskType: 0
   _SortingLayerID: 0
