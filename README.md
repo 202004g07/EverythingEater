@@ -42,14 +42,14 @@ C#, Github, UnityとUnityアセット(Cinemachine, Postprosessing)
 WASD/十字キー: 移動  
 Space:分裂  
 LShift:合体  
-■ 開発スケジュール
+### ■ 開発スケジュール
 ![image](https://user-images.githubusercontent.com/66996129/99039658-12448000-25cb-11eb-9a28-f96fafa236b9.png)
 
 
-■ 使ったアセット
+### ■ 使ったアセット
 Cinemacine, Postprosessing, UnityRecorder
 
-■ 総括
+### ■ 総括
 企画を0から考え、ゲームを一つ完成させた。
 その過程で、Cinemachineをはじめとしたアセットの取捨選択を学び、定められた期間の中でスケジュールを立てることの重要さを学んだ。
 また、企画と設計がプログラミング開発に深くかかわり、設計を正しく行えばプログラミングもスムーズに行えるという気付きを得た。
