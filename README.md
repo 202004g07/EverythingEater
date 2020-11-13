@@ -36,6 +36,9 @@ C#, Github, UnityとUnityアセット(Cinemachine, Postprosessing)
 
 <img src="https://user-images.githubusercontent.com/66996129/98928695-71e45200-251d-11eb-90db-9879c54884ee.png" width="320px">
 
+## ルール
+- 制限時間内に目標の大きさになることを目指す
+
 ## 操作方法
 ### プレイヤー
 
