@@ -6,7 +6,7 @@
 あらゆるものを「たべて」「大きくなる」
 
 ### ■ ゲームタイトル：
-**EverythingEater** [DEMOMOVIE](youtube.com/watch?v=JJUEHbO0jUA&feature=youtu.be)
+**EverythingEater** [DEMOMOVIE](https://www.youtube.com/watch?v=JJUEHbO0jUA)
 
 ### ■ ジャンル：
 2Dアクション
