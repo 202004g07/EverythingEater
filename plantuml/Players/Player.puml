@@ -1,8 +1,0 @@
-@startuml
-class Player <<static>> {
-    + {static} IsMainPlayer(gameObject:GameObject) : bool
-    + {static} Count() : int
-    + {static} BiggestSize : float <<get>>
-}
-Player --> "Biggest" Transform
-@enduml

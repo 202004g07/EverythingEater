@@ -1,9 +1,0 @@
-@startuml
-class UIEatenView {
-    + View(objSO:EatableObjSO) : void
-}
-MonoBehaviour <|-- UIEatenView
-UIEatenView --> "image" Image
-UIEatenView --> "Name" Text
-UIEatenView --> "DefaultColor" Color
-@enduml

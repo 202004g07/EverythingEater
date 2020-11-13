@@ -1,5 +1,0 @@
-@startuml
-class GameOverSceneUnload {
-}
-MonoBehaviour <|-- GameOverSceneUnload
-@enduml

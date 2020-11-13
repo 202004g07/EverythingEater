@@ -1,9 +1,0 @@
-@startuml
-class EatableObjContoroller {
-    + <<virtual>> ObjSize : float <<get>>
-}
-MonoBehaviour <|-- EatableObjContoroller
-IEatable <|-- EatableObjContoroller
-EatableObjContoroller --> "objSO" EatableObjSO
-EatableObjContoroller --> "UIEaten" UIEatenView
-@enduml

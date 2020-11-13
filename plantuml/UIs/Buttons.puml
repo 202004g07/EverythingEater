@@ -1,8 +1,0 @@
-@startuml
-class Buttons {
-    + OnRetry() : void
-    + OnQuit() : void
-}
-MonoBehaviour <|-- Buttons
-Buttons --> "timer" Timer
-@enduml

@@ -1,8 +1,0 @@
-@startuml
-namespace Eats{
-!include .\\Eats\Eat.puml
-!include .\\Eats\EatableChar.puml
-!include .\\Eats\EatableObjContoroller.puml
-!include .\\Eats\IEatable.puml
-}
-@enduml

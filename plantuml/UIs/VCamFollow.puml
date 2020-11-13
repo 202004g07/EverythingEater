@@ -1,9 +1,0 @@
-@startuml
-class VCamFollow {
-    Radius : float = 4
-    + AddCinemaChineGroup(target:Transform) : void
-    + RemoveCinemaChineGroup(target:Transform) : void
-}
-MonoBehaviour <|-- VCamFollow
-VCamFollow --> "TargetGroup" CinemachineTargetGroup
-@enduml

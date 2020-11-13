@@ -1,9 +1,0 @@
-@startuml
-namespace Players{
-!include .\\Players\AbsorbController.puml
-!include .\\Players\DivideController.puml
-!include .\\Players\Player.puml
-!include .\\Players\PlayerController.puml
-!include .\\Players\PlayerMover.puml
-}
-@enduml

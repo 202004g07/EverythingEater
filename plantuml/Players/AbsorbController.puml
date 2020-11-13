@@ -1,7 +1,0 @@
-@startuml
-class AbsorbController {
-    Update() : void
-    Absorb() : void
-}
-MonoBehaviour <|-- AbsorbController
-@enduml

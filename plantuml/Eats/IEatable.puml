@@ -1,5 +1,0 @@
-@startuml
-interface IEatable {
-    ObjSize : float <<get>>
-}
-@enduml

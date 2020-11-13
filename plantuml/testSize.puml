@@ -1,7 +1,0 @@
-@startuml
-class testSize {
-    Start() : void
-}
-MonoBehaviour <|-- testSize
-testSize --> "Player" EatableObjSO
-@enduml

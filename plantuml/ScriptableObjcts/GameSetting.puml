@@ -1,8 +1,0 @@
-@startuml
-class GameSetting {
-    Name : string
-    + GaolSize : float
-    + Time : int
-}
-ScriptableObject <|-- GameSetting
-@enduml

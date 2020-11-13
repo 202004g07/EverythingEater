@@ -1,7 +1,0 @@
-@startuml
-class TimerEvent {
-    isInvoked : bool = false
-    Update() : void
-}
-MonoBehaviour <|-- TimerEvent
-@enduml

@@ -1,6 +1,0 @@
-@startuml
-class PlayerCameraController {
-}
-MonoBehaviour <|-- PlayerCameraController
-PlayerCameraController --> "vCam" VCamFollow
-@enduml

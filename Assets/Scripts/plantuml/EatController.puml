@@ -1,6 +1,0 @@
-@startuml
-class EatController {
-    - OnCollisionEnter2D(collision:Collision2D) : void
-}
-MonoBehaviour <|-- EatController
-@enduml

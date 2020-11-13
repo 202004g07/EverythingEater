@@ -1,7 +1,0 @@
-@startuml
-class PlayerCollisionController {
-    + OnDetectEatableObj(collider:Collision2D) : void
-    + OnEatableObjExit(collider:Collision2D) : void
-}
-MonoBehaviour <|-- PlayerCollisionController
-@enduml

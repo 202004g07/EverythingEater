@@ -1,7 +1,0 @@
-@startuml
-class PlayerMover {
-    Update() : void
-}
-MonoBehaviour <|-- PlayerMover
-PlayerMover --> "timer" Timer
-@enduml

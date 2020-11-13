@@ -1,9 +1,0 @@
-@startuml
-class GameOverSceneManager {
-    Start() : void
-}
-MonoBehaviour <|-- GameOverSceneManager
-GameOverSceneManager --> "FinishSizeText" Text
-GameOverSceneManager --> "GoalSize" Text
-GameOverSceneManager --> "Player" EatableObjSO
-@enduml

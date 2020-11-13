@@ -1,7 +1,0 @@
-@startuml
-class EatableChar {
-    + <<override>> ObjSize : float <<get>>
-}
-EatableObjContoroller <|-- EatableChar
-EatableChar --> "m_Collider" BoxCollider2D
-@enduml
